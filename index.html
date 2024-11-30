@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/png" href="tic_tac_toe.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="display-message hide">
+            <p id="show-winner"></p>
+            <button id="newGame-btn">New Game</button>
+        </div>
+        <div id="line-container">
+            <div class="line"></div>
+            <div id="boxes">
+                <div class="box bl-0 bt-0"></div>
+                <div class="box bt-0"></div>
+                <div class="box br-0 bt-0"></div>
+                <div class="box bl-0"></div>
+                <div class="box"></div>
+                <div class="box br-0"></div>
+                <div class="box bl-0 bb-0"></div>
+                <div class="box bb-0"></div>
+                <div class="box br-0 bb-0"></div>
+            </div>
+        </div>
+        <button id="resetGame-btn">Reset Game</button>
+        <div class="win-player">
+            <div class="player" id="player-x">Player X has won <span id="player-x-won"></span> times</div>
+            <div class="player" id="player-o">Player O has won <span id="player-o-won"></span> times</div>
+            <button id="clear-history">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

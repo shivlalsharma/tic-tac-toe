@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0,0.2);
+    z-index: -1;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.display-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-winner{
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #6700b2;
+}
+
+.hide{
+    display: none;
+}
+
+#newGame-btn{
+    font-size: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid #595959;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#boxes{
+    margin-block: 30px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+}
+
+#line-container{
+    position: relative;
+}
+
+.line{
+    background-color: rgb(255, 0, 0);
+    height: 3px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease-in-out;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 50px;
+}
+
+#resetGame-btn{
+    font-size: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid #595959;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+.win-player{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.player{
+    padding: 5px 10px;
+}
+
+#player-x{
+    color: #5f3167;
+}
+
+#player-o{
+    color: #004d7b;
+}
+
+#player-x-won{
+    color: #0000ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#player-o-won{
+    color: #008000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#clear-history{
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #f00;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
